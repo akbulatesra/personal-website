@@ -87,7 +87,7 @@ const Home = () => {
         />
       </section>
       <button className="px-4 py-1 lg:px-6 lg:py-2 bg-yellow-400 w-fit text-base lg:text-xl rounded-md">
-        <Link href="/contact">Lets talk</Link>
+        <Link href="#contact">Lets talk</Link>
       </button>
       {showScrollButton && (
         <Link href={'#home'} scroll>
