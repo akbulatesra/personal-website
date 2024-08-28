@@ -21,25 +21,33 @@ const listItemsKlinikya = [
 
 const Experience = () => {
   return (
-    <div className="flex flex-col gap-12 mb-40 pt-10" id="experience">
-      <h2 className="text-6xl mb-0">Experience</h2>
-      <div className="grid grid-cols-2 gap-12 relative">
+    <div
+      className="flex flex-col lg:gap-12 md:gap-8 gap-4 xl:mb-40 xl:pt-10"
+      id="experience"
+    >
+      <h2 className="text-3xl lg:text-6xl mb-0">Experience</h2>
+      <div className="grid lg:grid-cols-2 lg:gap-12 md:gap-8 gap-4 relative">
         <Image
           src="/icons/blob.svg"
           alt="blob"
           width={600}
           height={600}
-          className="absolute left-0 right-0 mx-auto bottom-0 top-0 my-auto animate-blobAnimate dark:hidden"
+          className="hidden lg:block absolute left-0 right-0 mx-auto bottom-0 top-0 my-auto animate-blobAnimate dark:hidden"
         />
-        <section className="shadow-lg dark:shadow-darkMode px-8 py-4 flex flex-col">
-          <div className="text-xl flex mb-4 items-center gap-4">
-            <BriefcaseBusiness className="w-8 h-8" color="orange" />
+        <section className="shadow-lg dark:shadow-darkMode lg:px-8 lg:py-4 p-4 flex flex-col">
+          <div className="text-base lg:text-xl flex mb-4 items-center gap-4">
+            <BriefcaseBusiness
+              className="lg:w-8 lg:h-8 w-6 h-6"
+              color="orange"
+            />
             <div>
               <div>Frontend Developer at Figopara</div>
-              <div className="text-base">February 2024 - August 2024</div>
+              <div className="text-sm md:text-base lg:text-base">
+                February 2024 - August 2024
+              </div>
             </div>
           </div>
-          <p className="text-xl mb-4 text-justify">
+          <p className="text-base lg:text-xl lg:mb-4 mb-2 text-justify">
             Figopara is a financial technology company that provides trade
             finance solutions to businesses, enabling them to convert their
             invoiced receivables into cash before they become due. During the
@@ -49,14 +57,14 @@ const Experience = () => {
             other consisted of a traditional class-based React structure. The
             main technologies I used were;
           </p>
-          <div className="text-xl ml-2">
+          <div className="text-sm md:text-base lg:text-xl ml-2">
             {listItemsFigo.map((item, index) => {
               return (
                 <div key={index} className="flex items-center">
                   <CodeXml
                     width={30}
                     height={30}
-                    className="flex-shrink-0 mr-3"
+                    className="flex-shrink-0 lg:mr-3 mr-1.5 w-4 lg:w-auto"
                     color="purple"
                   />
                   <div>{item}</div>
@@ -65,15 +73,20 @@ const Experience = () => {
             })}
           </div>
         </section>
-        <section className="shadow-lg dark:shadow-darkMode px-8 py-4 flex flex-col">
-          <div className="text-xl flex mb-4 items-center gap-4">
-            <BriefcaseBusiness className="w-8 h-8" color="orange" />
+        <section className="shadow-lg dark:shadow-darkMode lg:px-8 lg:py-4 p-4 flex flex-col">
+          <div className="text-base lg:text-xl flex mb-4 items-center gap-4">
+            <BriefcaseBusiness
+              className="lg:w-8 lg:h-8 w-6 h-6"
+              color="orange"
+            />
             <div>
               <div>Frontend Developer at Klinikya Tech</div>
-              <div className="text-base">November 2022 - January 2024</div>
+              <div className="text-sm md:text-base lg:text-base">
+                November 2022 - January 2024
+              </div>
             </div>
           </div>
-          <p className="text-xl mb-4 text-justify">
+          <p className="text-base lg:text-xl lg:mb-4 mb-2 text-justify">
             Klinikya is a healthcare technology company that connects people
             with healthcare providers. In this company I played an active role
             in the development of the Klinikya web application and the
@@ -82,14 +95,14 @@ const Experience = () => {
             design and functionality. Within the framework of the projects I was
             involved in;
           </p>
-          <div className="text-xl ml-2 mt-auto">
+          <div className="text-sm md:text-base lg:text-xl ml-2">
             {listItemsKlinikya.map((item, index) => {
               return (
                 <div key={index} className="flex items-center">
                   <CodeXml
                     width={30}
                     height={30}
-                    className="flex-shrink-0 mr-3"
+                    className="flex-shrink-0 lg:mr-3 mr-1.5 w-4 lg:w-auto"
                     color="purple"
                   />
                   <div>{item}</div>

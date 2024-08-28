@@ -28,3 +28,13 @@ figure img {
     text-wrap: balance;
   }
 }
+
+@media screen and (max-width:640px) {
+  pre {
+    white-space: break-spaces;
+    margin: 4px 0;
+    padding: 4px;
+    font-size: 10px;
+  }
+
+}

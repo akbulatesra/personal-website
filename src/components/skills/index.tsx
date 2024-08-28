@@ -5,9 +5,12 @@ import Image from 'next/image';
 
 const TechnicalSkills = () => {
   return (
-    <div className="flex flex-col gap-12 h-[80vh] pt-10" id="skills">
-      <h2 className="text-6xl mb-0">Technical Skills</h2>
-      <div className="grid grid-cols-3 gap-5 text-xl">
+    <div
+      className="flex flex-col lg:gap-12 md:gap-8 gap-4 xl:h-[80vh] lg:pt-10"
+      id="skills"
+    >
+      <h2 className="text-3xl lg:text-6xl mb-0">Technical Skills</h2>
+      <div className="grid md:grid-cols-3 grid-cols-2 lg:gap-5 gap-3 text-base lg:text-xl self-center md:self-auto">
         {technicalSkilss.map((skill) => {
           return (
             <div
