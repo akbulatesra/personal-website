@@ -23,7 +23,7 @@ const CarouselComponent = () => {
         {images.map((image, index) => {
           return (
             <Image
-              src={`/images/${image}.JPG`}
+              src={`/images/${image}.jpg`}
               alt="cat"
               width={600}
               height={400}
