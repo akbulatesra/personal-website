@@ -80,7 +80,7 @@ const Home = () => {
         </aside>
         <Image
           alt="esra akbulat"
-          src={'/images/esra.JPG'}
+          src={'/images/esra.jpg'}
           width={280}
           height={280}
           className="border-8 rounded-full border-t-yellow-400 border-l-yellow-400 border-r-orange-500 border-b-orange-500 mx-auto col-span-2 w-2/5 h-2/5 md:w-52 md:h-52 xl:h-auto xl:w-auto mb-4 lg:mb-0"

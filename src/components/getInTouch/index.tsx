@@ -188,7 +188,7 @@ const GetInTouch = () => {
           alt="phone with some words hello etc"
           width={300}
           height={388}
-          src="/images/contact.JPG"
+          src="/images/contact.jpg"
           className="hidden lg:block w-1/2 object-fill h-[revert-layer] flex-1"
         />
       </section>
