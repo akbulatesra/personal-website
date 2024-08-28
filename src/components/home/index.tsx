@@ -1,8 +1,9 @@
-'use client';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
-import { projects } from '@/utils/projects';
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import { projects } from "@/utils/projects";
+import esra from "../../../public/images/esra.jpg";
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,10 +20,10 @@ const Home = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     handleScroll();
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -39,7 +40,7 @@ const Home = () => {
 
   return (
     <div
-      className="text-start flex flex-col gap-6 lg:gap-12 md:gap-8 xl:h-[80vh]"
+      className="text-start flex flex-col gap-6 lg:gap-12 md:gap-8 xl:h-[80vh] 2xl:h-auto 2xl:mb-32"
       ref={homeRef}
     >
       <section className="flex flex-col-reverse md:grid md:grid-cols-6 items-center">
@@ -63,9 +64,9 @@ const Home = () => {
                     className={`lg:absolute transition-opacity duration-1000 text-orange-500 lg:w-max ml-3 ${
                       index === currentIndex
                         ? isVisible
-                          ? 'opacity-100'
-                          : 'opacity-0'
-                        : 'opacity-0 hidden lg:block'
+                          ? "opacity-100"
+                          : "opacity-0"
+                        : "opacity-0 hidden lg:block"
                     }`}
                   >
                     {project}
@@ -80,9 +81,10 @@ const Home = () => {
         </aside>
         <Image
           alt="esra akbulat"
-          src={'/images/esra.jpg'}
+          src={esra}
           width={280}
           height={280}
+          placeholder="blur"
           className="border-8 rounded-full border-t-yellow-400 border-l-yellow-400 border-r-orange-500 border-b-orange-500 mx-auto col-span-2 w-2/5 h-2/5 md:w-52 md:h-52 xl:h-auto xl:w-auto mb-4 lg:mb-0"
         />
       </section>
@@ -90,10 +92,10 @@ const Home = () => {
         <Link href="#contact">Lets talk</Link>
       </button>
       {showScrollButton && (
-        <Link href={'#home'} scroll>
+        <Link href={"#home"} scroll>
           <Image
             alt="scroll-up"
-            src={'/icons/up.svg'}
+            src={"/icons/up.svg"}
             className="hidden lg:block fixed right-10 bottom-10 dark:bg-special_white dark:rounded-full dark:p-2 dark:w-10"
             width={30}
             height={30}
