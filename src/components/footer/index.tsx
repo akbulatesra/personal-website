@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="px-6 py-4 lg:px-36 lg:py-8 flex flex-col gap-8 dark:bg-special_black dark:text-special_white">
+    <footer className="px-6 py-4 lg:px-36 lg:py-8 flex flex-col gap-8 dark:bg-special_black dark:text-special_white 2xl:max-w-[1536]">
       <section className="flex gap-12 mx-auto">
         <Link href={'https://github.com/akbulatesra'} target="_blank">
           <Image

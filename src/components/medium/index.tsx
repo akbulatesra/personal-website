@@ -1,8 +1,8 @@
-'use client';
-import { useEffect, useState } from 'react';
-import parse from 'html-react-parser';
-import Link from 'next/link';
-import { getMediumArticles } from '@/helpers';
+"use client";
+import { useEffect, useState } from "react";
+import parse from "html-react-parser";
+import Link from "next/link";
+import { getMediumArticles } from "@/helpers";
 
 interface Article {
   title: string;
@@ -28,7 +28,7 @@ const Medium = () => {
   }, []);
   return (
     <div
-      className="flex flex-col lg:gap-12 md:gap-8 gap-4 xl:h-[80vh] lg:pt-10"
+      className="flex flex-col lg:gap-12 md:gap-8 gap-4 xl:h-[80vh] 2xl:h-auto 2xl:mb-32 lg:pt-10"
       id="articles"
     >
       <h2 className="text-3xl lg:text-6xl mb-0">Articles</h2>
@@ -53,9 +53,9 @@ const Medium = () => {
         ) : (
           <p className="text-base lg:text-xl lg:col-span-2">
             Articles cannot be displayed at the moment, but you can have a view
-            them{' '}
+            them{" "}
             <Link
-              href={'https://medium.com/@a.esra.akbulat'}
+              href={"https://medium.com/@a.esra.akbulat"}
               target="_blank"
               className="text-special_red"
             >

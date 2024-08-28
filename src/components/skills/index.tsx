@@ -1,12 +1,12 @@
-import { technicalSkilss } from '@/utils/technicalSkills';
-import { FileCode2 } from 'lucide-react';
+import { technicalSkilss } from "@/utils/technicalSkills";
+import { FileCode2 } from "lucide-react";
 
-import Image from 'next/image';
+import Image from "next/image";
 
 const TechnicalSkills = () => {
   return (
     <div
-      className="flex flex-col lg:gap-12 md:gap-8 gap-4 xl:h-[80vh] lg:pt-10"
+      className="flex flex-col lg:gap-12 md:gap-8 gap-4 xl:h-[80vh] 2xl:h-auto lg:pt-10 2xl:mb-32"
       id="skills"
     >
       <h2 className="text-3xl lg:text-6xl mb-0">Technical Skills</h2>

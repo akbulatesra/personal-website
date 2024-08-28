@@ -1,28 +1,28 @@
-import { CodeXml, BriefcaseBusiness } from 'lucide-react';
-import Image from 'next/image';
+import { CodeXml, BriefcaseBusiness } from "lucide-react";
+import Image from "next/image";
 
 const listItemsFigo = [
-  'Redux and Context API for state management',
-  'RTK query for connecting backend services',
-  'Typescript as project language',
-  'Mui material components customised to the project design',
-  'React Hook Form for form validation',
-  'It can be summarised as i18n for the integration of different languages. In addition, various hook developments have been provided depending on the project needs.',
+  "Redux and Context API for state management",
+  "RTK query for connecting backend services",
+  "Typescript as project language",
+  "Mui material components customised to the project design",
+  "React Hook Form for form validation",
+  "It can be summarised as i18n for the integration of different languages. In addition, various hook developments have been provided depending on the project needs.",
 ];
 const listItemsKlinikya = [
-  'Redux for state management',
-  'Next.js and TypeScript for project optimisation',
-  'React Native for the development of the Klinikya mobile application',
+  "Redux for state management",
+  "Next.js and TypeScript for project optimisation",
+  "React Native for the development of the Klinikya mobile application",
   "SignalR's Hub Connection for real-time communication",
-  'Twilio for users to make video calls',
-  'Moka payment system for payments',
-  'I worked with Microsoft Cognitive Search technologies for users to access the offered services',
+  "Twilio for users to make video calls",
+  "Moka payment system for payments",
+  "I worked with Microsoft Cognitive Search technologies for users to access the offered services",
 ];
 
 const Experience = () => {
   return (
     <div
-      className="flex flex-col lg:gap-12 md:gap-8 gap-4 xl:mb-40 xl:pt-10"
+      className="flex flex-col lg:gap-12 md:gap-8 gap-4 xl:mb-40 2xl:mb-32 xl:pt-10"
       id="experience"
     >
       <h2 className="text-3xl lg:text-6xl mb-0">Experience</h2>
