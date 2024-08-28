@@ -45,8 +45,11 @@ const GetInTouch = () => {
       });
   };
   return (
-    <div className="flex flex-col gap-12 h-[70vh]" id="contact">
-      <h2 className='text-6xl mb-0"'>Get In Touch</h2>
+    <div
+      className="flex flex-col lg:gap-12 md:gap-8 gap-4 xl:h-[70vh]"
+      id="contact"
+    >
+      <h2 className='text-3xl lg:text-6xl mb-0"'>Get In Touch</h2>
       <Toaster
         toastOptions={{
           duration: 5000,
@@ -56,8 +59,8 @@ const GetInTouch = () => {
           },
         }}
       />
-      <section className="flex gap-12 ">
-        <div className="flex flex-1 w-1/2">
+      <section className="flex lg:gap-12 md:gap-8 gap-4">
+        <div className="flex flex-1 lg:w-1/2">
           <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
@@ -77,10 +80,10 @@ const GetInTouch = () => {
             }) => (
               <Form
                 ref={formRef}
-                className="flex flex-col px-4 py-2 bg-inherit text-lg h-full w-full shadow-lg dark:shadow-darkMode"
+                className="flex flex-col px-4 py-2 bg-inherit text-base lg:text-lg h-full w-full shadow-lg dark:shadow-darkMode"
               >
                 <span className="flex flex-col relative">
-                  <label htmlFor="name" className="text-lg">
+                  <label htmlFor="name" className="text-base lg:text-lg">
                     Name
                   </label>
                   <Field
@@ -100,13 +103,13 @@ const GetInTouch = () => {
                     }`}
                   />
                   {errors.name && touched.name && (
-                    <span className="text-sm absolute right-0 bottom-0 text-special_red">
+                    <span className="text-xs lg:text-sm absolute right-0 bottom-0 text-special_red">
                       {errors.name}
                     </span>
                   )}
                 </span>
                 <span className="flex flex-col relative">
-                  <label htmlFor="mail" className="text-lg">
+                  <label htmlFor="mail" className="text-base lg:text-lg">
                     Mail Address
                   </label>
                   <Field
@@ -126,13 +129,13 @@ const GetInTouch = () => {
                     }
                   />
                   {errors.mail && touched.mail && (
-                    <span className="text-sm absolute right-0 bottom-0 text-special_red">
+                    <span className="text-xs lg:text-sm absolute right-0 bottom-0 text-special_red">
                       {errors.mail}
                     </span>
                   )}
                 </span>
                 <span className="flex flex-col relative">
-                  <label htmlFor="message" className="text-lg">
+                  <label htmlFor="message" className="text-base lg:text-lg">
                     Message
                   </label>
                   <Field
@@ -143,7 +146,7 @@ const GetInTouch = () => {
                     className={`bg-inherit p-2 shadow-md dark:shadow-darkMode mb-5 mt-2 border-none resize-none ${
                       errors.message &&
                       touched.message &&
-                      'border-special_red border-2'
+                      'border-special_red border-2 !border-solid'
                     }`}
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                       onChange(
@@ -159,7 +162,7 @@ const GetInTouch = () => {
                     }
                   />
                   {errors.message && touched.message && (
-                    <span className="text-sm absolute right-0 bottom-0 text-special_red">
+                    <span className="lg:text-sm text-xs absolute right-0 bottom-0 text-special_red">
                       {errors.message}
                     </span>
                   )}
@@ -167,11 +170,11 @@ const GetInTouch = () => {
 
                 <button
                   type="submit"
-                  className={`px-6 py-2 ${
+                  className={`lg:px-6 lg:py-2 px-3 py-1 ${
                     isSubmitting
                       ? 'bg-slate-200 text-slate-500'
                       : 'bg-yellow-400'
-                  } w-fit text-lg rounded-md my-auto`}
+                  } w-fit lg:text-lg text-sm md:text-base rounded-md my-auto`}
                   disabled={isSubmitting}
                 >
                   Submit
@@ -186,7 +189,7 @@ const GetInTouch = () => {
           width={300}
           height={388}
           src="/images/contact.JPG"
-          className="w-1/2 object-fill h-[revert-layer] flex-1"
+          className="hidden lg:block w-1/2 object-fill h-[revert-layer] flex-1"
         />
       </section>
     </div>

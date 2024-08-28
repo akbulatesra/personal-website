@@ -23,7 +23,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <div className="px-36 py-16 dark:bg-special_black dark:text-special_white">
+          <div className="px-6 py-4 md:px-20 md:py-8 xl:px-36 lg:py-16 dark:bg-special_black dark:text-special_white">
             {children}
           </div>
           <Footer />

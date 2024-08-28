@@ -7,7 +7,7 @@ import TechnicalSkills from '@/components/skills';
 
 export default function Page() {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col gap-20 xl:gap-0">
       <Home />
       <About />
       <Experience />
