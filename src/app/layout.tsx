@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="font-roboto">
-      <body>
+      <body className=" dark:bg-special_black dark:text-special_white ">
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
