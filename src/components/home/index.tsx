@@ -1,9 +1,9 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import { projects } from "@/utils/projects";
-import esra from "../../../public/images/esra.jpg";
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
+import { projects } from '@/utils/projects';
+import esra from '../../../public/images/esra.jpg';
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,10 +20,10 @@ const Home = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     handleScroll();
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
@@ -61,12 +61,12 @@ const Home = () => {
                 return (
                   <span
                     key={index}
-                    className={`lg:absolute transition-opacity duration-1000 text-orange-500 lg:w-max ml-3 ${
+                    className={`lg:absolute transition-opacity duration-1000 text-orange-500 font-semibold lg:w-max ml-3 ${
                       index === currentIndex
                         ? isVisible
-                          ? "opacity-100"
-                          : "opacity-0"
-                        : "opacity-0 hidden lg:block"
+                          ? 'opacity-100'
+                          : 'opacity-0'
+                        : 'opacity-0 hidden lg:block'
                     }`}
                   >
                     {project}
@@ -88,14 +88,17 @@ const Home = () => {
           className="border-8 rounded-full border-t-yellow-400 border-l-yellow-400 border-r-orange-500 border-b-orange-500 mx-auto col-span-2 w-2/5 h-2/5 md:w-52 md:h-52 xl:h-auto xl:w-auto mb-4 lg:mb-0"
         />
       </section>
-      <button className="px-4 py-1 lg:px-6 lg:py-2 bg-yellow-400 w-fit text-base lg:text-xl rounded-md">
-        <Link href="#contact">Lets talk</Link>
-      </button>
+      <Link
+        href="#contact"
+        className="px-4 py-1 lg:px-6 lg:py-2 bg-yellow-400 w-fit text-base lg:text-xl rounded-md"
+      >
+        Lets talk
+      </Link>
       {showScrollButton && (
-        <Link href={"#home"} scroll>
+        <Link href={'#home'} scroll>
           <Image
             alt="scroll-up"
-            src={"/icons/up.svg"}
+            src={'/icons/up.svg'}
             className="hidden lg:block fixed right-10 bottom-10 dark:bg-special_white dark:rounded-full dark:p-2 dark:w-10"
             width={30}
             height={30}
