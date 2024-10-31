@@ -106,11 +106,11 @@ const GetInTouch = () => {
                     }`}
                   />
                   {errors.name && touched.name && (
-                    <div>
+                    <div role="alert">
                       <span
-                        aria-live="assertive"
                         id="error-name"
                         className="text-xs lg:text-sm absolute right-0 bottom-0 text-special_red"
+                        aria-live="assertive"
                       >
                         {errors.name}
                       </span>
@@ -138,13 +138,15 @@ const GetInTouch = () => {
                     }
                   />
                   {errors.mail && touched.mail && (
-                    <span
-                      id="error-mail"
-                      className="text-xs lg:text-sm absolute right-0 bottom-0 text-special_red"
-                      aria-live="assertive"
-                    >
-                      {errors.mail}
-                    </span>
+                    <div role="alert">
+                      <span
+                        id="error-mail"
+                        className="text-xs lg:text-sm absolute right-0 bottom-0 text-special_red"
+                        aria-live="assertive"
+                      >
+                        {errors.mail}
+                      </span>
+                    </div>
                   )}
                 </span>
                 <span className="flex flex-col relative">
@@ -175,13 +177,15 @@ const GetInTouch = () => {
                     }
                   />
                   {errors.message && touched.message && (
-                    <span
-                      id="error-message"
-                      className="lg:text-sm text-xs absolute right-0 bottom-0 text-special_red"
-                      aria-live="assertive"
-                    >
-                      {errors.message}
-                    </span>
+                    <div role="alert">
+                      <span
+                        id="error-message"
+                        className="lg:text-sm text-xs absolute right-0 bottom-0 text-special_red"
+                        aria-live="assertive"
+                      >
+                        {errors.message}
+                      </span>
+                    </div>
                   )}
                 </span>
 

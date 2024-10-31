@@ -106,7 +106,13 @@ const Navbar = () => {
                     <Sun aria-label="sun icon" />
                   )}
                 </button>
-                <span id="theme_button">
+                <span
+                  id="theme_button"
+                  style={{
+                    position: 'absolute',
+                    top: -999999,
+                  }}
+                >
                   {theme === 'light'
                     ? 'button for change theme light to dark'
                     : 'button for change theme dark to light'}
