@@ -1,4 +1,3 @@
-import React from 'react';
 import About from '@/components/about';
 import Experience from '@/components/experience';
 import GetInTouch from '@/components/getInTouch';
