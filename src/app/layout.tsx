@@ -1,22 +1,36 @@
+import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from '@/components/navbar';
 import { ThemeProvider } from 'next-themes';
 import Footer from '@/components/footer';
+import { cookies } from 'next/headers';
 
 export const metadata: Metadata = {
   title: 'Frontend Developer Esra Akbulat',
   description: "Frontend Developer Esra Akbulat's Personal Portfolio Website",
 };
 
+function getTheme() {
+  const cookieStore = cookies();
+  const themeCookie = cookieStore.get('theme');
+  const theme = themeCookie ? themeCookie.value : 'dark';
+  return theme;
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const theme = getTheme() as string;
   return (
-    <html lang="en" className="font-roboto">
-      <body className=" dark:bg-special_black dark:text-special_white ">
+    <html
+      lang="en"
+      className={`font-roboto ${theme}`}
+      style={{ colorScheme: theme }}
+    >
+      <body className="dark:bg-special_black dark:text-special_white">
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

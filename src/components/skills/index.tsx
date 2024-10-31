@@ -1,7 +1,7 @@
-import { technicalSkilss } from "@/utils/technicalSkills";
-import { FileCode2 } from "lucide-react";
-
-import Image from "next/image";
+import React from 'react';
+import { technicalSkilss } from '@/utils/technicalSkills';
+import { FileCode2 } from 'lucide-react';
+import Image from 'next/image';
 
 const TechnicalSkills = () => {
   return (
@@ -19,7 +19,7 @@ const TechnicalSkills = () => {
             >
               {skill.icon ? (
                 <Image
-                  alt={skill.name}
+                  alt={`${skill.name} icon`}
                   src={skill.icon}
                   width={20}
                   height={20}

@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+import React from 'react';
 import { MyFormValues } from '@/types';
 import { FormikTouched, FormikErrors } from 'formik';
 import axios from 'axios';
@@ -43,22 +45,4 @@ export const getMediumArticles = async () => {
     console.error('Error fetching Medium posts:', error);
     return [];
   }
-};
-
-export const theme = () => {
-  if (
-    localStorage.theme === 'dark' ||
-    (!('theme' in localStorage) &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches)
-  ) {
-    document.documentElement.classList.add('dark');
-  } else {
-    document.documentElement.classList.remove('dark');
-  }
-
-  localStorage.theme = 'light';
-
-  localStorage.theme = 'dark';
-
-  localStorage.removeItem('theme');
 };
