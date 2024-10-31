@@ -1,8 +1,9 @@
-import CarouselComponent from "../carousel";
+import React from 'react';
+import CarouselComponent from '../carousel';
 
 const About = () => {
   return (
-    <div className="xl:mb-40 2xl:mb-32 xl:pt-10" id="about">
+    <section className="xl:mb-40 2xl:mb-32 xl:pt-10" id="about">
       <h2 className="text-3xl lg:text-6xl lg:mb-8 mb-4">About me</h2>
       <p className="text-base lg:text-xl mb-4 text-justify">
         In my professional life, I develop web applications using various
@@ -23,7 +24,7 @@ const About = () => {
         some examples below!
       </p>
       <CarouselComponent />
-    </div>
+    </section>
   );
 };
 export default About;

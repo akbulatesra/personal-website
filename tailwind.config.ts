@@ -20,6 +20,7 @@ const config: Config = {
         special_purple: '#8C3B5E',
         special_red: '#C12801',
         special_black: '#1a1a1a',
+        special_orange: '#DA3A00',
       },
       fontFamily: {
         roboto: ['"Roboto Serif"', 'serif'],
