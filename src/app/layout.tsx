@@ -1,15 +1,14 @@
-import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from '@/components/navbar';
 import { ThemeProvider } from 'next-themes';
 import Footer from '@/components/footer';
+import { cookies } from 'next/headers';
 
 export const metadata: Metadata = {
   title: 'Frontend Developer Esra Akbulat',
   description: "Frontend Developer Esra Akbulat's Personal Portfolio Website",
 };
-
 
 
 export default function RootLayout({
