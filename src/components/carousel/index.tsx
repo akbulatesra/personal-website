@@ -1,4 +1,5 @@
 'use client';
+import React from 'react';
 import { Carousel, FlowbiteCarouselTheme } from 'flowbite-react';
 import Image from 'next/image';
 const images = ['cat', 'cat2', 'cat3', 'cat4', 'cat5', 'cat6', 'cat7'];
@@ -24,7 +25,7 @@ const CarouselComponent = () => {
           return (
             <Image
               src={`/images/${image}.jpg`}
-              alt="cat"
+              alt="random cat photo taken by me"
               width={600}
               height={400}
               className="w-full object-contain lg:h-[revert-layer] h-full"
