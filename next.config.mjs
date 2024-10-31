@@ -5,9 +5,6 @@ const nextConfig = {
     TEMPLATE_ID: process.env.TEMPLATE_ID,
     SERVICE_ID: process.env.SERVICE_ID,
   },
-  experimental: {
-    runtime: 'edge',
-  },
 };
 
 export default nextConfig;
