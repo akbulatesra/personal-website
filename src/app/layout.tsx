@@ -4,26 +4,20 @@ import './globals.css';
 import Navbar from '@/components/navbar';
 import { ThemeProvider } from 'next-themes';
 import Footer from '@/components/footer';
-import { cookies } from 'next/headers';
 
 export const metadata: Metadata = {
   title: 'Frontend Developer Esra Akbulat',
   description: "Frontend Developer Esra Akbulat's Personal Portfolio Website",
 };
 
-function getTheme() {
-  const cookieStore = cookies();
-  const themeCookie = cookieStore.get('theme');
-  const theme = themeCookie ? themeCookie.value : 'dark';
-  return theme;
-}
+
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const theme = getTheme() as string;
+  const theme = "dark"
   return (
     <html
       lang="en"
